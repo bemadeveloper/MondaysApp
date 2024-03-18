@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BestTeamViewController.swift
 //  MondaysApp
 //
 //  Created by Bema on 18/3/24.
@@ -8,29 +8,32 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController, UITableViewDataSource {
-    
-    private var names = ["John", "Nikita", "Dima", "Olga", "Anton", "Artur"]
-    private var images = ["sun.min", "location", "keyboard", "network", "accessibility", "person.circle"]
+class BestTeamViewController: UIViewController, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return cellOfSettings?.count ?? 0
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        names.count
+        return cellOfSettings?[section].count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = names[indexPath.row]
-        cell.imageView?.image = UIImage(systemName: images[indexPath.row])
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CustomTableViewCell
+        cell?.cellOfSetting = cellOfSettings?[indexPath.section][indexPath.row]
+        //cell?.accessoryType = .detailDisclosureButton
+        return cell ?? UITableViewCell()
     }
     
+    
+    private var cellOfSettings: [[CellOfSettings]]?
     
     // MARK: - Outlets
     
     private lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .plain)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
+        
         return tableView
     }()
     
@@ -38,15 +41,16 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cellOfSettings = CellOfSettings.settings
         view.backgroundColor = .systemCyan
-        title = "TableView"
+        title = "Настройки"
         navigationController?.navigationBar.prefersLargeTitles = true
         setupHierarchy()
         setupLayout()
     }
     
     // MARK: - Setup
-
+    
     private func setupHierarchy() {
         view.addSubview(tableView)
     }
@@ -57,8 +61,4 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
     }
 
-    
-    
-    
 }
-
