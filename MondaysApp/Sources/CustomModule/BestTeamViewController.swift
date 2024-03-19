@@ -8,24 +8,11 @@
 import UIKit
 import SnapKit
 
-class BestTeamViewController: UIViewController, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return cellOfSettings?.count ?? 0
-    }
+
+class BestTeamViewController: UIViewController {
+    private var settings: [[Setting]]?
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cellOfSettings?[section].count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CustomTableViewCell
-        cell?.cellOfSetting = cellOfSettings?[indexPath.section][indexPath.row]
-        //cell?.accessoryType = .detailDisclosureButton
-        return cell ?? UITableViewCell()
-    }
-    
-    
-    private var cellOfSettings: [[CellOfSettings]]?
+    var appCoordinator: AppCoordinator?
     
     // MARK: - Outlets
     
@@ -33,6 +20,7 @@ class BestTeamViewController: UIViewController, UITableViewDataSource {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
+        tableView.delegate = self
         
         return tableView
     }()
@@ -41,12 +29,12 @@ class BestTeamViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cellOfSettings = CellOfSettings.settings
         view.backgroundColor = .systemCyan
         title = "Настройки"
         navigationController?.navigationBar.prefersLargeTitles = true
         setupHierarchy()
         setupLayout()
+        fetchData()
     }
     
     // MARK: - Setup
@@ -60,5 +48,53 @@ class BestTeamViewController: UIViewController, UITableViewDataSource {
             make.top.right.bottom.left.equalTo(view)
         }
     }
+    
+    // MARK: Data
 
+    private func fetchData() {
+        settings = SettingsGrouped.createGroupedSettings()
+    }
 }
+
+extension BestTeamViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        80
+    }
+        
+        func numberOfSections(in tableView: UITableView) -> Int {
+            settings?.count ?? 0
+        }
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return settings?[section].count ?? 0
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CustomTableViewCell
+            cell?.data = settings?[indexPath.section][indexPath.row]
+            //cell?.accessoryType = .detailDisclosureButton
+            return cell ?? UITableViewCell()
+        }
+        
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//            let viewController = DetailViewController()
+//            tableView.deselectRow(at: indexPath, animated: true)
+//            viewController.data = settings?[indexPath.section][indexPath.row]
+            guard let data = settings?[indexPath.section][indexPath.row] else { return }
+            print("Нажата ячейка \(data.type.rawValue)")
+            tableView.deselectRow(at: indexPath, animated: true)
+
+//            if let accessory = data.kind {
+//                switch accessory {
+//                case .switcher(_):
+//                    break
+//                default:
+//                    break
+//                }
+//            }
+        }
+    }
+
+
+

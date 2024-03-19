@@ -1,25 +1,6 @@
 import Foundation
 import UIKit
 
-enum NameOfSettings: String {
-    case airmode = "Авиарежим"
-    case wifi = "Wi-Fi"
-    case bluetooth = "Bluetooth"
-    case mobileData = "Сотовая связь"
-    case notifications = "Уведомления"
-    case sounds = "Звуки, тактильные сигналы"
-    case focus = "Фокусирование"
-    case screenTime = "Экранное время"
-    case general = "Основные"
-    case controlCentre = "Пункт управления"
-    case display = "Экран и яркость"
-    case homeScreen = "Экран <Домой>"
-    case accessibility = "Унверсальный доступ"
-    case wallpaper = "Обои"
-    case siri = "Siri и поиск"
-    case faceId = "Face ID и код-пароль"
-}
-
 extension NameOfSettings {
     var image: UIImage {
         let imageName: String
@@ -61,7 +42,51 @@ extension NameOfSettings {
         }
         return UIImage(systemName: imageName) ?? UIImage()
         }
+    
+    var color: UIColor {
+        let color: UIColor
+        switch self {
+        case .airmode:
+            color = .systemOrange
+        case .wifi:
+            color = .systemBlue
+        case .bluetooth:
+            color = .systemBlue
+        case .mobileData:
+            color = .systemGreen
+        case .notifications:
+            color = .systemGreen
+        case .sounds:
+            color = .systemPink
+        case .notifications:
+            color = .systemRed
+        case .focus:
+            color = .systemPurple
+        case .screenTime:
+            color = .systemPurple
+        case .general:
+            color = .systemGray
+        case .controlCentre:
+            color = .systemGray
+        case .display:
+            color = .systemBlue
+        case .homeScreen:
+            color = .systemBlue
+        case .accessibility:
+            color = .systemBlue
+        case .wallpaper:
+            color = .systemTeal
+        case .siri:
+            color = .white
+        case .faceId:
+            color = .systemGreen
+        }
+        return color
     }
+
+    }
+
+
 
 struct CellOfSettings {
     var icon: NameOfSettings
