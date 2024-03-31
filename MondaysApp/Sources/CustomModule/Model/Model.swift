@@ -41,7 +41,7 @@ extension NameOfSettings {
             imageName = "faceid"
         }
         return UIImage(systemName: imageName) ?? UIImage()
-        }
+    }
     
     var color: UIColor {
         let color: UIColor
@@ -58,8 +58,6 @@ extension NameOfSettings {
             color = .systemGreen
         case .sounds:
             color = .systemPink
-        case .notifications:
-            color = .systemRed
         case .focus:
             color = .systemPurple
         case .screenTime:
@@ -83,10 +81,7 @@ extension NameOfSettings {
         }
         return color
     }
-
-    }
-
-
+}
 
 struct CellOfSettings {
     var icon: NameOfSettings
