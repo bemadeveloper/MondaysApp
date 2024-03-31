@@ -20,7 +20,6 @@
 		D7F210D82BA896E900A54EA6 /* SettingsGrouped.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */; };
 		D7F210DA2BA89ACD00A54EA6 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210D92BA89ACD00A54EA6 /* Setting.swift */; };
 		D7F210DC2BA9774900A54EA6 /* SettingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */; };
-		D7F210DE2BA97BE600A54EA6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210DD2BA97BE600A54EA6 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 		D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGrouped.swift; sourceTree = "<group>"; };
 		D7F210D92BA89ACD00A54EA6 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImageView.swift; sourceTree = "<group>"; };
-		D7F210DD2BA97BE600A54EA6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +56,8 @@
 			children = (
 				D7F210CF2BA8397700A54EA6 /* CustomTableViewCell.swift */,
 				D7F210D32BA839C300A54EA6 /* Model.swift */,
+				D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */,
+				D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -65,9 +65,7 @@
 		D7AA01302BB71445006AC9F5 /* SettingDetails */ = {
 			isa = PBXGroup;
 			children = (
-				D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */,
 				D7F210D92BA89ACD00A54EA6 /* Setting.swift */,
-				D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */,
 			);
 			path = SettingDetails;
 			sourceTree = "<group>";
@@ -112,7 +110,6 @@
 			children = (
 				D7F210B12BA82D7300A54EA6 /* AppDelegate.swift */,
 				D7F210B32BA82D7300A54EA6 /* SceneDelegate.swift */,
-				D7F210DD2BA97BE600A54EA6 /* AppCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -222,7 +219,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F210DE2BA97BE600A54EA6 /* AppCoordinator.swift in Sources */,
 				D7F210D22BA839AC00A54EA6 /* BestTeamViewController.swift in Sources */,
 				D7F210B22BA82D7300A54EA6 /* AppDelegate.swift in Sources */,
 				D7F210DC2BA9774900A54EA6 /* SettingImageView.swift in Sources */,

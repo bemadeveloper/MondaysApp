@@ -1,6 +1,30 @@
 import Foundation
 import UIKit
 
+struct Model {
+    let type: NameOfSettings
+    var kind: CellType?
+}
+
+enum NameOfSettings: String {
+    case airmode = "Авиарежим"
+    case wifi = "Wi-Fi"
+    case bluetooth = "Bluetooth"
+    case mobileData = "Сотовая связь"
+    case notifications = "Уведомления"
+    case sounds = "Звуки, тактильные сигналы"
+    case focus = "Фокусирование"
+    case screenTime = "Экранное время"
+    case general = "Основные"
+    case controlCentre = "Пункт управления"
+    case display = "Экран и яркость"
+    case homeScreen = "Экран <Домой>"
+    case accessibility = "Унверсальный доступ"
+    case wallpaper = "Обои"
+    case siri = "Siri и поиск"
+    case faceId = "Face ID и код-пароль"
+}
+
 extension NameOfSettings {
     var image: UIImage {
         let imageName: String
@@ -83,30 +107,33 @@ extension NameOfSettings {
     }
 }
 
-struct CellOfSettings {
-    var icon: NameOfSettings
-    var nameOfSettings: NameOfSettings
-    var chevron: UIImage
+enum CellType {
+    case switcher(value: Bool)
+    case connectionInfo(value: ConnectionInfo)
+    case notification(count: Int)
 }
 
-extension CellOfSettings {
-    static var settings: [[CellOfSettings]] = [
-        [CellOfSettings(icon: .airmode, nameOfSettings: .airmode, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .wifi, nameOfSettings: .wifi, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .bluetooth, nameOfSettings: .bluetooth, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .mobileData, nameOfSettings: .mobileData, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .notifications, nameOfSettings: .notifications, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .sounds, nameOfSettings: .sounds, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .focus, nameOfSettings: .focus, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .screenTime, nameOfSettings: .screenTime, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .general, nameOfSettings: .general, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .controlCentre, nameOfSettings: .controlCentre, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .display, nameOfSettings: .display, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .homeScreen, nameOfSettings: .homeScreen, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .accessibility, nameOfSettings: .accessibility, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .wallpaper, nameOfSettings: .wallpaper, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .siri, nameOfSettings: .siri, chevron: UIImage(systemName: "chevron.right")!)],
-        [CellOfSettings(icon: .faceId, nameOfSettings: .faceId, chevron: UIImage(systemName: "chevron.right")!)]
-        
-    ]
+enum ConnectionInfo: CustomStringConvertible {
+    case turnOn
+    case turnOff
+    case notConnected
+    case connected
+    case connectedEmptyInfo
+
+    var description: String {
+        switch self {
+        case .turnOn:
+            "Вкл."
+        case .turnOff:
+            "Выкл."
+        case .notConnected:
+            "Не подключен"
+        case .connected:
+            "Подключен"
+        case .connectedEmptyInfo:
+            ""
+        }
+    }
 }
+
+

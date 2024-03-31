@@ -20,7 +20,7 @@ class DetailViewController: UIView {
 
     // MARK: Data
 
-    var data: Setting? {
+    var data: Model? {
         didSet {
             configureView()
         }

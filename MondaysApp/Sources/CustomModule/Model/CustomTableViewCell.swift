@@ -9,8 +9,9 @@ import UIKit
 import SnapKit
 
 class CustomTableViewCell: UITableViewCell {
+    
     static let identifier = "CustomTableViewCell"
-    var data: Setting? {
+    var data: Model? {
         didSet {
             guard let data else { return }
             iconView.data = data

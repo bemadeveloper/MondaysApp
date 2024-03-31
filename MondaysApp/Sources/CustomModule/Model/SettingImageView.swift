@@ -10,9 +10,9 @@ import UIKit
 
 class SettingImageView: UIImageView {
 
-    // MARK: Data
+    // MARK: - Data
 
-    var data: Setting? {
+    var data: Model? {
         didSet {
             image = data?.type.image.withTintColor(Constants.imageColor, renderingMode: .alwaysOriginal)
             backgroundColor = data?.type.color
@@ -25,13 +25,13 @@ class SettingImageView: UIImageView {
         setupLayout()
     }
 
-    // MARK: Init
+    // MARK: - Init
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-    // MARK: Setup
+    
+    // MARK: - Setup
 
     private func setupView() {
         layer.cornerRadius = Constants.imageCornerRadius
@@ -43,7 +43,6 @@ class SettingImageView: UIImageView {
             make.height.width.equalTo(SettingsTableViewCellConstants.imageSize)
         }
     }
-
 }
 
 // MARK: - Constants
