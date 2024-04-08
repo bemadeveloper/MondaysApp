@@ -11,7 +11,7 @@ import Foundation
 //    let type: NameOfSettings
 //    var kind: CellType?
 //}
-
+//
 //enum CellType {
 //    case switcher(value: Bool)
 //    case connectionInfo(value: ConnectionInfo)
