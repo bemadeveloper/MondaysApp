@@ -18,7 +18,6 @@
 		D7F210D42BA839C300A54EA6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210D32BA839C300A54EA6 /* Model.swift */; };
 		D7F210D62BA86A4100A54EA6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210D52BA86A4100A54EA6 /* DetailViewController.swift */; };
 		D7F210D82BA896E900A54EA6 /* SettingsGrouped.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */; };
-		D7F210DA2BA89ACD00A54EA6 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210D92BA89ACD00A54EA6 /* Setting.swift */; };
 		D7F210DC2BA9774900A54EA6 /* SettingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		D7F210D32BA839C300A54EA6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D7F210D52BA86A4100A54EA6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGrouped.swift; sourceTree = "<group>"; };
-		D7F210D92BA89ACD00A54EA6 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +63,6 @@
 			children = (
 				D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */,
 				D7F210D32BA839C300A54EA6 /* Model.swift */,
-				D7F210D92BA89ACD00A54EA6 /* Setting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,7 +224,6 @@
 				D7F210B42BA82D7300A54EA6 /* SceneDelegate.swift in Sources */,
 				D7F210D62BA86A4100A54EA6 /* DetailViewController.swift in Sources */,
 				D7F210D82BA896E900A54EA6 /* SettingsGrouped.swift in Sources */,
-				D7F210DA2BA89ACD00A54EA6 /* Setting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
