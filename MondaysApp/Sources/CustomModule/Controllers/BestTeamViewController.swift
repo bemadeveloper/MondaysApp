@@ -83,6 +83,16 @@ extension BestTeamViewController: UITableViewDataSource, UITableViewDelegate {
         let data = settings[indexPath.section][indexPath.row]
         print("Нажата ячейка \(data.type.rawValue)")
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        if let button = data.kind {
+            switch button {
+            case .switcher(_) :
+                break
+            default:
+                let detailWindow = BestTeamViewController()
+                navigationController?.pushViewController(detailWindow, animated: true)
+            }
+        }
         }
     }
 

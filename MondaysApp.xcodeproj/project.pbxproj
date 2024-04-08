@@ -51,32 +51,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D7AA012F2BB71429006AC9F5 /* Model */ = {
+		D7AA012F2BB71429006AC9F5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				D7F210CF2BA8397700A54EA6 /* CustomTableViewCell.swift */,
-				D7F210D32BA839C300A54EA6 /* Model.swift */,
-				D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */,
 				D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D7AA01302BB71445006AC9F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */,
+				D7F210D32BA839C300A54EA6 /* Model.swift */,
+				D7F210D92BA89ACD00A54EA6 /* Setting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D7AA01302BB71445006AC9F5 /* SettingDetails */ = {
-			isa = PBXGroup;
-			children = (
-				D7F210D92BA89ACD00A54EA6 /* Setting.swift */,
-			);
-			path = SettingDetails;
-			sourceTree = "<group>";
-		};
-		D7AA01312BB7147A006AC9F5 /* ViewControllers */ = {
+		D7AA01312BB7147A006AC9F5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				D7F210D12BA839AC00A54EA6 /* BestTeamViewController.swift */,
 				D7F210D52BA86A4100A54EA6 /* DetailViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		D7F210A52BA82D7300A54EA6 = {
@@ -135,9 +135,9 @@
 		D7F210CE2BA8394A00A54EA6 /* CustomModule */ = {
 			isa = PBXGroup;
 			children = (
-				D7AA012F2BB71429006AC9F5 /* Model */,
-				D7AA01312BB7147A006AC9F5 /* ViewControllers */,
-				D7AA01302BB71445006AC9F5 /* SettingDetails */,
+				D7AA012F2BB71429006AC9F5 /* Views */,
+				D7AA01312BB7147A006AC9F5 /* Controllers */,
+				D7AA01302BB71445006AC9F5 /* Model */,
 			);
 			path = CustomModule;
 			sourceTree = "<group>";
