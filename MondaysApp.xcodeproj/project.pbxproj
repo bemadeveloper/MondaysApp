@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7F176962BC6DD6D0034FEA7 /* SwitcherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F176952BC6DD6D0034FEA7 /* SwitcherCell.swift */; };
+		D7F176982BC926D20034FEA7 /* AirmodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F176972BC926D20034FEA7 /* AirmodeModel.swift */; };
+		D7F176D22BCAE2110034FEA7 /* SettingImageAirmode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F176D12BCAE2110034FEA7 /* SettingImageAirmode.swift */; };
+		D7F176D42BCAED970034FEA7 /* GroupedAirmode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F176D32BCAED970034FEA7 /* GroupedAirmode.swift */; };
 		D7F210B22BA82D7300A54EA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210B12BA82D7300A54EA6 /* AppDelegate.swift */; };
 		D7F210B42BA82D7300A54EA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210B32BA82D7300A54EA6 /* SceneDelegate.swift */; };
-		D7F210B62BA82D7300A54EA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210B52BA82D7300A54EA6 /* ViewController.swift */; };
-		D7F210B92BA82D7300A54EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F210B72BA82D7300A54EA6 /* Main.storyboard */; };
 		D7F210BB2BA82D7500A54EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F210BA2BA82D7500A54EA6 /* Assets.xcassets */; };
 		D7F210BE2BA82D7500A54EA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F210BC2BA82D7500A54EA6 /* LaunchScreen.storyboard */; };
+		D7F210CA2BA8311700A54EA6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D7F210C92BA8311700A54EA6 /* SnapKit */; };
+		D7F210CC2BA8311700A54EA6 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D7F210CB2BA8311700A54EA6 /* SnapKit-Dynamic */; };
+		D7F210D02BA8397700A54EA6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210CF2BA8397700A54EA6 /* CustomTableViewCell.swift */; };
+		D7F210D22BA839AC00A54EA6 /* BestTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210D12BA839AC00A54EA6 /* BestTeamViewController.swift */; };
+		D7F210D42BA839C300A54EA6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210D32BA839C300A54EA6 /* Model.swift */; };
+		D7F210D62BA86A4100A54EA6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210D52BA86A4100A54EA6 /* DetailViewController.swift */; };
+		D7F210D82BA896E900A54EA6 /* SettingsGrouped.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */; };
+		D7F210DC2BA9774900A54EA6 /* SettingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7F176952BC6DD6D0034FEA7 /* SwitcherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherCell.swift; sourceTree = "<group>"; };
+		D7F176972BC926D20034FEA7 /* AirmodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirmodeModel.swift; sourceTree = "<group>"; };
+		D7F176D12BCAE2110034FEA7 /* SettingImageAirmode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImageAirmode.swift; sourceTree = "<group>"; };
+		D7F176D32BCAED970034FEA7 /* GroupedAirmode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedAirmode.swift; sourceTree = "<group>"; };
 		D7F210AE2BA82D7300A54EA6 /* MondaysApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MondaysApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F210B12BA82D7300A54EA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7F210B32BA82D7300A54EA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D7F210B52BA82D7300A54EA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D7F210B82BA82D7300A54EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7F210BA2BA82D7500A54EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7F210BD2BA82D7500A54EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7F210BF2BA82D7500A54EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7F210CF2BA8397700A54EA6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D7F210D12BA839AC00A54EA6 /* BestTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTeamViewController.swift; sourceTree = "<group>"; };
+		D7F210D32BA839C300A54EA6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D7F210D52BA86A4100A54EA6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGrouped.swift; sourceTree = "<group>"; };
+		D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +49,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F210CA2BA8311700A54EA6 /* SnapKit in Frameworks */,
+				D7F210CC2BA8311700A54EA6 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7AA012F2BB71429006AC9F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7F210CF2BA8397700A54EA6 /* CustomTableViewCell.swift */,
+				D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */,
+				D7F176952BC6DD6D0034FEA7 /* SwitcherCell.swift */,
+				D7F176D12BCAE2110034FEA7 /* SettingImageAirmode.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D7AA01302BB71445006AC9F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */,
+				D7F210D32BA839C300A54EA6 /* Model.swift */,
+				D7F176972BC926D20034FEA7 /* AirmodeModel.swift */,
+				D7F176D32BCAED970034FEA7 /* GroupedAirmode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7AA01312BB7147A006AC9F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D7F210D12BA839AC00A54EA6 /* BestTeamViewController.swift */,
+				D7F210D52BA86A4100A54EA6 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D7F210A52BA82D7300A54EA6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +107,48 @@
 		D7F210B02BA82D7300A54EA6 /* MondaysApp */ = {
 			isa = PBXGroup;
 			children = (
+				D7F210C52BA82E5E00A54EA6 /* App */,
+				D7F210C62BA82E6900A54EA6 /* Sources */,
+				D7F210C72BA82E7300A54EA6 /* Resources */,
+			);
+			path = MondaysApp;
+			sourceTree = "<group>";
+		};
+		D7F210C52BA82E5E00A54EA6 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				D7F210B12BA82D7300A54EA6 /* AppDelegate.swift */,
 				D7F210B32BA82D7300A54EA6 /* SceneDelegate.swift */,
-				D7F210B52BA82D7300A54EA6 /* ViewController.swift */,
-				D7F210B72BA82D7300A54EA6 /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D7F210C62BA82E6900A54EA6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D7F210CE2BA8394A00A54EA6 /* CustomModule */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D7F210C72BA82E7300A54EA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D7F210BA2BA82D7500A54EA6 /* Assets.xcassets */,
 				D7F210BC2BA82D7500A54EA6 /* LaunchScreen.storyboard */,
 				D7F210BF2BA82D7500A54EA6 /* Info.plist */,
 			);
-			path = MondaysApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D7F210CE2BA8394A00A54EA6 /* CustomModule */ = {
+			isa = PBXGroup;
+			children = (
+				D7AA012F2BB71429006AC9F5 /* Views */,
+				D7AA01312BB7147A006AC9F5 /* Controllers */,
+				D7AA01302BB71445006AC9F5 /* Model */,
+			);
+			path = CustomModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +167,10 @@
 			dependencies = (
 			);
 			name = MondaysApp;
+			packageProductDependencies = (
+				D7F210C92BA8311700A54EA6 /* SnapKit */,
+				D7F210CB2BA8311700A54EA6 /* SnapKit-Dynamic */,
+			);
 			productName = MondaysApp;
 			productReference = D7F210AE2BA82D7300A54EA6 /* MondaysApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +199,9 @@
 				Base,
 			);
 			mainGroup = D7F210A52BA82D7300A54EA6;
+			packageReferences = (
+				D7F210C82BA8311700A54EA6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D7F210AF2BA82D7300A54EA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +218,6 @@
 			files = (
 				D7F210BE2BA82D7500A54EA6 /* LaunchScreen.storyboard in Resources */,
 				D7F210BB2BA82D7500A54EA6 /* Assets.xcassets in Resources */,
-				D7F210B92BA82D7300A54EA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +228,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F210B62BA82D7300A54EA6 /* ViewController.swift in Sources */,
+				D7F176962BC6DD6D0034FEA7 /* SwitcherCell.swift in Sources */,
+				D7F210D22BA839AC00A54EA6 /* BestTeamViewController.swift in Sources */,
+				D7F176D22BCAE2110034FEA7 /* SettingImageAirmode.swift in Sources */,
 				D7F210B22BA82D7300A54EA6 /* AppDelegate.swift in Sources */,
+				D7F210DC2BA9774900A54EA6 /* SettingImageView.swift in Sources */,
+				D7F210D42BA839C300A54EA6 /* Model.swift in Sources */,
+				D7F176D42BCAED970034FEA7 /* GroupedAirmode.swift in Sources */,
+				D7F210D02BA8397700A54EA6 /* CustomTableViewCell.swift in Sources */,
 				D7F210B42BA82D7300A54EA6 /* SceneDelegate.swift in Sources */,
+				D7F176982BC926D20034FEA7 /* AirmodeModel.swift in Sources */,
+				D7F210D62BA86A4100A54EA6 /* DetailViewController.swift in Sources */,
+				D7F210D82BA896E900A54EA6 /* SettingsGrouped.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D7F210B72BA82D7300A54EA6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7F210B82BA82D7300A54EA6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D7F210BC2BA82D7500A54EA6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,10 +385,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HDQUFL254V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MondaysApp/Info.plist;
+				INFOPLIST_FILE = MondaysApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,10 +412,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HDQUFL254V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MondaysApp/Info.plist;
+				INFOPLIST_FILE = MondaysApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +452,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7F210C82BA8311700A54EA6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7F210C92BA8311700A54EA6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7F210C82BA8311700A54EA6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D7F210CB2BA8311700A54EA6 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7F210C82BA8311700A54EA6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D7F210A62BA82D7300A54EA6 /* Project object */;
 }
