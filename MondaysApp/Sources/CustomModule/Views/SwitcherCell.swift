@@ -14,15 +14,15 @@ class SwitcherCell: UITableViewCell {
     
     var data: AirmodeModel? {
         didSet {
-            guard let data = data else { return }
-            icon.secondData = data
-            airplaneLabel.text = data.title
+            guard let data else { return }
+            iconView.data = data
+            switchValueChanged(switchControl)
         }
     }
     
     // MARK: - Outlets
     
-    private lazy var icon = SettingImageView(frame: .zero)
+    private lazy var iconView = SettingImageAirmode(frame: .zero)
     
     private lazy var airplaneLabel: UILabel = {
         let label = UILabel()
@@ -67,17 +67,17 @@ class SwitcherCell: UITableViewCell {
     }
     
     private func setupHierarchy() {
-        addSubview(icon)
+        addSubview(iconView)
         addSubview(airplaneLabel)
     }
     
     private func setupLayout() {
-        icon.snp.makeConstraints { make in
+        iconView.snp.makeConstraints { make in
             make.leading.equalTo(contentView).offset(10.0)
             make.centerY.equalTo(contentView)
         }
         airplaneLabel.snp.makeConstraints { make in
-            make.leading.equalTo(icon.snp.trailing).offset(15.0)
+            make.leading.equalTo(iconView.snp.trailing).offset(15.0)
             make.centerY.equalTo(contentView)
         }
     }
@@ -90,6 +90,9 @@ class SwitcherCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        
+        accessoryType = .none
+        accessoryView = nil
     }
 }
 

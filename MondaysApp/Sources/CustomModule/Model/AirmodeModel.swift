@@ -8,15 +8,31 @@
 import Foundation
 import UIKit
 
-struct AirmodeModel {
-    var iconAir: UIImage
-    var title = "Авиарежим"
-    var switcher: UISwitch
+struct AirmodeModel: Hashable {
+    let icon: Airmode
+    let switcher: UISwitch
 }
 
-extension AirmodeModel {
-    static var airmode: [[AirmodeModel]] = [
-        [AirmodeModel(iconAir: UIImage(systemName: "airplane") ?? UIImage(), switcher: UISwitch())]
+enum Airmode: String {
+    case airmode = "airplane"
+}
+
+extension Airmode {
+    var image: UIImage {
+        let imageName: String
+        switch self {
+        case .airmode:
+            imageName = "airplane"
+        }
+        return UIImage(systemName: imageName) ?? UIImage()
+    }
     
-    ]
+    var color: UIColor {
+        let color: UIColor
+        switch self {
+        case .airmode:
+            color = .systemOrange
+        }
+        return color
+    }
 }

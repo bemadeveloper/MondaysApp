@@ -13,10 +13,10 @@ fileprivate enum Constants {
     static let stackSpacing = 10.0
     static let labelTextColor = UIColor.black
     static let newNotificationsText = "Новых уведомлений"
-    static let alreadyConfigured = "Всё уже настроено, здесь нечего делать"
+    static let alreadyConfigured = "Done"
 }
 
-class DetailViewController: UIView {
+class DetailViewController: UIViewController {
 
     // MARK: Data
 

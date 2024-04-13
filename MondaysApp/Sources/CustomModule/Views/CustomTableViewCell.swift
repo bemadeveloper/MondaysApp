@@ -28,7 +28,7 @@ class CustomTableViewCell: UITableViewCell {
     
     private var trailingView: UIView?
     
-    // MARK: Init
+    // MARK: - Init
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: Self.identifier)
@@ -41,7 +41,7 @@ class CustomTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Setup
+    // MARK: - Setups
     
     private func setupView() {
         let contentConfiguration = UIListContentConfiguration.valueCell()
@@ -137,26 +137,25 @@ class CustomTableViewCell: UITableViewCell {
     
     // MARK: - Constants
     
-    fileprivate enum Constants {
-        static let backgroundColor = UIColor.white
-        static let textFont = UIFont.systemFont(ofSize: 16)
-        static let textColor = UIColor.black
-        static let textLeadingOffset = 15.0
-        static let imageLeadingOffset = 10.0
-        static let imageVerticalOffset = 6.0
-        static let trailingViewTrailingOffset = 8.0
-        static let trailingLabelTextFont = UIFont.systemFont(ofSize: 16)
-        static let trailingLabelTextColor = UIColor.systemGray
-        static let trailingNotificationsColor = UIColor.systemRed
-        static let trailingNotificationsSize = 20.0
-        static let trailingNotificationsCornerRadius = trailingNotificationsSize / 2
-        static let trailingNotificationsTextColor = UIColor.white
-        static let trailingNotificationsTextFont = UIFont.systemFont(ofSize: 12)
-    }
-    
-    enum SettingsTableViewCellConstants {
-        static let imageSize = 30.0
-        static let separatorInsetLeft = Constants.imageLeadingOffset + Self.imageSize + Constants.textLeadingOffset
-        static let rowHeight = Self.imageSize + Constants.imageVerticalOffset * 2
-    }
+fileprivate enum Constants {
+    static let backgroundColor = UIColor.white
+    static let textFont = UIFont.systemFont(ofSize: 16)
+    static let textColor = UIColor.black
+    static let textLeadingOffset = 15.0
+    static let imageLeadingOffset = 10.0
+    static let imageVerticalOffset = 6.0
+    static let trailingViewTrailingOffset = 8.0
+    static let trailingLabelTextFont = UIFont.systemFont(ofSize: 16)
+    static let trailingLabelTextColor = UIColor.systemGray
+    static let trailingNotificationsColor = UIColor.systemRed
+    static let trailingNotificationsSize = 20.0
+    static let trailingNotificationsCornerRadius = trailingNotificationsSize / 2
+    static let trailingNotificationsTextColor = UIColor.white
+    static let trailingNotificationsTextFont = UIFont.systemFont(ofSize: 12)
+}
 
+enum SettingsTableViewCellConstants {
+    static let imageSize = 30.0
+    static let separatorInsetLeft = Constants.imageLeadingOffset + Self.imageSize + Constants.textLeadingOffset
+    static let rowHeight = Self.imageSize + Constants.imageVerticalOffset * 2
+}
