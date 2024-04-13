@@ -13,45 +13,33 @@ class BestTeamViewController: UIViewController {
     private var settings: [[Model]] = SettingsGrouped.createGroupedSettings()
     private var airmode: [[AirmodeModel]]?
     
-    // MARK: - Outlets
+    // MARK: Init
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
     
-    private lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .insetGrouped)
-        tableView.register(SwitcherCell.self, forCellReuseIdentifier: SwitcherCell.identifier)
-        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: CustomTableViewCell.identifier)
-        tableView.separatorInset.left = SettingsTableViewCellConstants.separatorInsetLeft
-        tableView.dataSource = self
-        tableView.delegate = self
-        
-        return tableView
-    }()
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - Lyfecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
-        setupHierarchy()
-        setupLayout()
         fetchData()
+    }
+    
+    override func loadView() {
+        setupView()
     }
     
     // MARK: - Setup
     
     private func setupView() {
-        view.backgroundColor = .systemCyan
-        title = "Настройки"
-        navigationController?.navigationBar.prefersLargeTitles = true
-    }
-    
-    private func setupHierarchy() {
-        view.addSubview(tableView)
-    }
-    
-    private func setupLayout() {
-        tableView.snp.makeConstraints { make in
-            make.top.right.bottom.left.equalTo(view)
-        }
+        let view = TableView()
+        view.configureTableView(delegate: self, dataSource: self)
+        self.view = view
+        self.title = "Настройки"
     }
     
     // MARK: Data
@@ -94,19 +82,18 @@ extension BestTeamViewController: UITableViewDataSource, UITableViewDelegate {
         let data = settings[indexPath.section][indexPath.row]
         print("Нажата ячейка \(data.type.rawValue)")
         tableView.deselectRow(at: indexPath, animated: true)
-    
-            if let button = data.kind {
-                switch button {
-                case .notification(count: 0):
-                    break
-                default:
-                    let detailWindow = DetailViewController()
-                    if let viewController = detailWindow as? UIViewController {
-                        navigationController?.pushViewController(viewController, animated: true)
-                    }
-                }
+        
+        
+        if let button = data.kind {
+            switch button {
+            case .notification(count: 0):
+                break
+            default:
+                let detailWindow = DetailViewController(data: data)
+                navigationController?.pushViewController(detailWindow, animated: true)
             }
         }
+    }
 }
 
 
