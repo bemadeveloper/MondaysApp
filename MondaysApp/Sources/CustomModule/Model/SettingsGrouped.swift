@@ -1,10 +1,10 @@
 import Foundation
+import UIKit
 
 struct SettingsGrouped {
     
     static func createGroupedSettings() -> [[Model]] {
         let primaryGroup = [
-            Model(type: .airmode, kind: .switcher(value: false)),
             Model(type: .wifi, kind: .connectionInfo(value: .connected)),
             Model(type: .bluetooth, kind: .connectionInfo(value: .notConnected)),
             Model(type: .mobileData, kind: .connectionInfo(value: .turnOn)),
