@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7F176962BC6DD6D0034FEA7 /* SwitcherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F176952BC6DD6D0034FEA7 /* SwitcherCell.swift */; };
+		D7F176982BC926D20034FEA7 /* AirmodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F176972BC926D20034FEA7 /* AirmodeModel.swift */; };
+		D7F176D22BCAE2110034FEA7 /* SettingImageAirmode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F176D12BCAE2110034FEA7 /* SettingImageAirmode.swift */; };
+		D7F176D42BCAED970034FEA7 /* GroupedAirmode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F176D32BCAED970034FEA7 /* GroupedAirmode.swift */; };
 		D7F210B22BA82D7300A54EA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210B12BA82D7300A54EA6 /* AppDelegate.swift */; };
 		D7F210B42BA82D7300A54EA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F210B32BA82D7300A54EA6 /* SceneDelegate.swift */; };
 		D7F210BB2BA82D7500A54EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F210BA2BA82D7500A54EA6 /* Assets.xcassets */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7F176952BC6DD6D0034FEA7 /* SwitcherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherCell.swift; sourceTree = "<group>"; };
+		D7F176972BC926D20034FEA7 /* AirmodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirmodeModel.swift; sourceTree = "<group>"; };
+		D7F176D12BCAE2110034FEA7 /* SettingImageAirmode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImageAirmode.swift; sourceTree = "<group>"; };
+		D7F176D32BCAED970034FEA7 /* GroupedAirmode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedAirmode.swift; sourceTree = "<group>"; };
 		D7F210AE2BA82D7300A54EA6 /* MondaysApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MondaysApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F210B12BA82D7300A54EA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7F210B32BA82D7300A54EA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +62,8 @@
 			children = (
 				D7F210CF2BA8397700A54EA6 /* CustomTableViewCell.swift */,
 				D7F210DB2BA9774900A54EA6 /* SettingImageView.swift */,
+				D7F176952BC6DD6D0034FEA7 /* SwitcherCell.swift */,
+				D7F176D12BCAE2110034FEA7 /* SettingImageAirmode.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -63,6 +73,8 @@
 			children = (
 				D7F210D72BA896E900A54EA6 /* SettingsGrouped.swift */,
 				D7F210D32BA839C300A54EA6 /* Model.swift */,
+				D7F176972BC926D20034FEA7 /* AirmodeModel.swift */,
+				D7F176D32BCAED970034FEA7 /* GroupedAirmode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,12 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F176962BC6DD6D0034FEA7 /* SwitcherCell.swift in Sources */,
 				D7F210D22BA839AC00A54EA6 /* BestTeamViewController.swift in Sources */,
+				D7F176D22BCAE2110034FEA7 /* SettingImageAirmode.swift in Sources */,
 				D7F210B22BA82D7300A54EA6 /* AppDelegate.swift in Sources */,
 				D7F210DC2BA9774900A54EA6 /* SettingImageView.swift in Sources */,
 				D7F210D42BA839C300A54EA6 /* Model.swift in Sources */,
+				D7F176D42BCAED970034FEA7 /* GroupedAirmode.swift in Sources */,
 				D7F210D02BA8397700A54EA6 /* CustomTableViewCell.swift in Sources */,
 				D7F210B42BA82D7300A54EA6 /* SceneDelegate.swift in Sources */,
+				D7F176982BC926D20034FEA7 /* AirmodeModel.swift in Sources */,
 				D7F210D62BA86A4100A54EA6 /* DetailViewController.swift in Sources */,
 				D7F210D82BA896E900A54EA6 /* SettingsGrouped.swift in Sources */,
 			);
