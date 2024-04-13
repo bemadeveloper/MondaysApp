@@ -18,6 +18,13 @@ class SettingImageView: UIImageView {
             backgroundColor = data?.type.color
         }
     }
+    
+    var secondData: AirmodeModel? {
+        didSet {
+            image = secondData?.iconAir.withTintColor(Constants.imageColor, renderingMode: .alwaysOriginal)
+            backgroundColor = .systemOrange
+        }
+    }
 
     override init(frame: CGRect) {
         super.init(frame: .zero)

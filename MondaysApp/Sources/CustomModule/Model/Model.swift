@@ -7,7 +7,6 @@ struct Model {
 }
 
 enum NameOfSettings: String {
-    case airmode = "Авиарежим"
     case wifi = "Wi-Fi"
     case bluetooth = "Bluetooth"
     case mobileData = "Сотовая связь"
@@ -29,8 +28,6 @@ extension NameOfSettings {
     var image: UIImage {
         let imageName: String
         switch self {
-        case .airmode:
-            imageName = "airplane"
         case .wifi:
             imageName = "wifi"
         case .bluetooth:
@@ -70,8 +67,6 @@ extension NameOfSettings {
     var color: UIColor {
         let color: UIColor
         switch self {
-        case .airmode:
-            color = .systemOrange
         case .wifi:
             color = .systemBlue
         case .bluetooth:
@@ -108,7 +103,6 @@ extension NameOfSettings {
 }
 
 enum CellType {
-    case switcher(value: Bool)
     case connectionInfo(value: ConnectionInfo)
     case notification(count: Int)
 }
